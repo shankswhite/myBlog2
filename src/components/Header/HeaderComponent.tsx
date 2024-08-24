@@ -12,7 +12,7 @@ import { BiMenuAltRight, BiPhoneCall } from 'react-icons/bi'
 import { motion } from 'framer-motion'
 // @ts-ignore
 import { headerVariants, getMenuStyles } from '../../utils/motion'
-import RecipeGenerator from '../RecipeGenerator/RecipeGeneratorComponent'
+// import RecipeGenerator from '../RecipeGenerator/RecipeGeneratorComponent'
 
 // hook
 // @ts-ignore

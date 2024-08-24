@@ -3,8 +3,8 @@ import ExpertiesComponent from './components/Experties/ExpertiesComponent';
 import HeaderComponent from './components/Header/HeaderComponent';
 import HeroComponent from './components/Hero/HeroComponent';
 import TimelineComponent from './components/Timeline/TimelineComponent';
-import WIPComponent from './components/WIP/WIPComponent';
-import PortfolioComponent from './components/Portfolio/PortfolioComponent';
+// import WIPComponent from './components/WIP/WIPComponent';
+// import PortfolioComponent from './components/Portfolio/PortfolioComponent';
 import RecipeGeneratorComponent from './components/RecipeGenerator/RecipeGeneratorComponent';
 import css from './styles/app.module.scss'
 import './styles/global.scss'
@@ -28,7 +28,7 @@ function App() {
             </>
           } />
           <Route path="/recipe-generator" element={<RecipeGeneratorComponent />} />
-          
+
         </Routes>
       </div>
     </Router>
