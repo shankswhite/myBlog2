@@ -28,6 +28,7 @@ function App() {
             </>
           } />
           <Route path="/recipe-generator" element={<RecipeGeneratorComponent />} />
+          
         </Routes>
       </div>
     </Router>
