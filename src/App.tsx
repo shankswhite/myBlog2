@@ -1,5 +1,5 @@
 import './App.css'
-import ExpertiesComponent from './components/Experties/ExpertiesComponent';
+// import ExpertiesComponent from './components/Experties/ExpertiesComponent';
 import HeaderComponent from './components/Header/HeaderComponent';
 import HeroComponent from './components/Hero/HeroComponent';
 import TimelineComponent from './components/Timeline/TimelineComponent';
