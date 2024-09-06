@@ -29,25 +29,25 @@ export const whatIDo = [
 
 export const workExp = [
   {
-    place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
+    place: "IM30 / Tap4fun, Beijing, China",
+    tenure: "JUL 2019 - Oct 2022",
+    role: "Senior Game Designer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "Contributed to a top 50 global gaming revenue company ($760 million annually), where I helped design level gameplay as part of a game project generating over $20 million in monthly revenue.",
   },
   {
-    place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
+    place: "Gatech, Remote",
+    tenure: "FAL 2023 - Present",
+    role: "Student",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "Operating System, Software Development Process, Machine Learning for Trading, Video Game Design & Development",
   },
   {
-    place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
+    place: "Northeastern University, San Jose, CA",
+    tenure: "FAL 2023 - Present",
+    role: "Student / Research Assistant",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "Discrete Mathematics, Object-Oriented Programming, Data Structures & Algorithms, Algorithms",
   },
 ];
 

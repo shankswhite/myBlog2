@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={
             <>
               <HeroComponent />
-              <ExpertiesComponent />
+              {/* <ExpertiesComponent /> */}
               <TimelineComponent />
               {/* <WIPComponent /> */}
               {/* <PortfolioComponent /> */}
