@@ -12,9 +12,25 @@ import './styles/index.css'
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
-function RedirectToGitHub() {
+function RedirectToml4t() {
   React.useEffect(() => {
     window.location.href = "https://github.com/shankswhite/Machine-Learning-for-Trading-For-Sharing/tree/main";
+  }, []);
+
+  return null;
+}
+
+function RedirectToQA() {
+  React.useEffect(() => {
+    window.location.href = "https://github.com/shankswhite/CS6300-Group-Project";
+  }, []);
+
+  return null;
+}
+
+function RedirectToOS() {
+  React.useEffect(() => {
+    window.location.href = "https://github.com/shankswhite/gios";
   }, []);
 
   return null;
@@ -36,7 +52,9 @@ function App() {
             </>
           } />
           <Route path="/recipe-generator" element={<RecipeGeneratorComponent />} />
-          <Route path="/ml4t" element={<RedirectToGitHub />} />
+          <Route path="/ml4t" element={<RedirectToml4t />} />
+          <Route path="/qa" element={<RedirectToQA />} />
+          <Route path="/os" element={<RedirectToOS />} />
 
         </Routes>
       </div>
