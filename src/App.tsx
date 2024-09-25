@@ -10,7 +10,7 @@ import css from './styles/app.module.scss'
 import './styles/global.scss'
 import './styles/index.css'
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
             </>
           } />
           <Route path="/recipe-generator" element={<RecipeGeneratorComponent />} />
+          <Route path="/ml4t" element={<Navigate to="https://github.com/shankswhite/Machine-Learning-for-Trading-For-Sharing/tree/main" />} />
 
         </Routes>
       </div>

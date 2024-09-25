@@ -7,6 +7,7 @@ import '../../styles/global.scss'
 
 // Icon
 import { BiMenuAltRight, BiPhoneCall } from 'react-icons/bi'
+import { FaGithub } from 'react-icons/fa';
 
 // Animation
 import { motion } from 'framer-motion'
@@ -43,6 +44,11 @@ export default function HeaderComponent() {
           <li><Link to="/portfolio">Portfolio</Link></li>
           <li><Link to="/experience">Experience</Link></li>
           <li><Link to="/resume">Resume</Link></li> */}
+          <li> 
+            <a href="https://github.com/shankswhite" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={24} />
+            </a> 
+          </li>
           <li><Link to="/recipe-generator">AI ChatBot</Link></li>
           <li className={`flexCenter ${css.phone}`}>
             <p>+1 669 388 2709</p>
