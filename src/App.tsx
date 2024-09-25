@@ -9,8 +9,16 @@ import RecipeGeneratorComponent from './components/RecipeGenerator/RecipeGenerat
 import css from './styles/app.module.scss'
 import './styles/global.scss'
 import './styles/index.css'
-
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+
+function RedirectToGitHub() {
+  React.useEffect(() => {
+    window.location.href = "https://github.com/shankswhite/Machine-Learning-for-Trading-For-Sharing/tree/main";
+  }, []);
+
+  return null;
+}
 
 function App() {
   return (
@@ -28,7 +36,7 @@ function App() {
             </>
           } />
           <Route path="/recipe-generator" element={<RecipeGeneratorComponent />} />
-          <Route path="/ml4t" element={<Navigate to="https://github.com/shankswhite/Machine-Learning-for-Trading-For-Sharing/tree/main" />} />
+          <Route path="/ml4t" element={<RedirectToGitHub />} />
 
         </Routes>
       </div>
