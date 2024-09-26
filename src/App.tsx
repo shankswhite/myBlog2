@@ -36,6 +36,38 @@ function RedirectToOS() {
   return null;
 }
 
+function RedirectToUnity() {
+  React.useEffect(() => {
+    window.location.href = "https://github.com/shankswhite/CS6457---GDD";
+  }, []);
+
+  return null;
+}
+
+function RedirectToCGame() {
+  React.useEffect(() => {
+    window.location.href = "https://github.com/shankswhite/CS5008GroupProject";
+  }, []);
+
+  return null;
+}
+
+function RedirectToRecipe() {
+  React.useEffect(() => {
+    window.location.href = "https://github.com/shankswhite/OnKitchen-Back-End";
+  }, []);
+
+  return null;
+}
+
+function RedirectToMahjong() {
+  React.useEffect(() => {
+    window.location.href = "https://github.com/shankswhite/MahjongCalculator";
+  }, []);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
@@ -55,6 +87,10 @@ function App() {
           <Route path="/ml4t" element={<RedirectToml4t />} />
           <Route path="/qa" element={<RedirectToQA />} />
           <Route path="/os" element={<RedirectToOS />} />
+          <Route path="/unity" element={<RedirectToUnity />} />
+          <Route path="/cgame" element={<RedirectToCGame />} />
+          <Route path="/recipe" element={<RedirectToRecipe />} />
+          <Route path="/mahjong" element={<RedirectToMahjong />} />
 
         </Routes>
       </div>
