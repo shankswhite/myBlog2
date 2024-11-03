@@ -6,6 +6,7 @@ import TimelineComponent from './components/Timeline/TimelineComponent';
 // import WIPComponent from './components/WIP/WIPComponent';
 // import PortfolioComponent from './components/Portfolio/PortfolioComponent';
 import RecipeGeneratorComponent from './components/RecipeGenerator/RecipeGeneratorComponent';
+import PathFindingComponent from './components/PathFinding/PathFindingComponent';
 import css from './styles/app.module.scss'
 import './styles/global.scss'
 import './styles/index.css'
@@ -91,6 +92,7 @@ function App() {
           <Route path="/cgame" element={<RedirectToCGame />} />
           <Route path="/recipe" element={<RedirectToRecipe />} />
           <Route path="/mahjong" element={<RedirectToMahjong />} />
+          <Route path="/pathfinding" element={<PathFindingComponent />} />
 
         </Routes>
       </div>

@@ -50,10 +50,15 @@ export default function HeaderComponent() {
             </a> 
           </li>
           <li><Link to="/recipe-generator">AI ChatBot</Link></li>
+
+          <li><Link to="/pathfinding">Pathfinding</Link></li>
+
           <li className={`flexCenter ${css.phone}`}>
             <p>+1 669 388 2709</p>
             <BiPhoneCall size={"40px"}/>
           </li>
+
+
         </ul>
 
         <div className={css.menuIcon}
