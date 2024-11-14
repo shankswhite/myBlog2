@@ -13,6 +13,14 @@ import './styles/index.css'
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
+function RedirectToYolo() {
+  React.useEffect(() => {
+    window.location.href = "https://github.com/shankswhite/YOLOwithKAN";
+  }, []);
+
+  return null;
+}
+
 function RedirectToml4t() {
   React.useEffect(() => {
     window.location.href = "https://github.com/shankswhite/Machine-Learning-for-Trading-For-Sharing/tree/main";
@@ -92,8 +100,9 @@ function App() {
           <Route path="/cgame" element={<RedirectToCGame />} />
           <Route path="/recipe" element={<RedirectToRecipe />} />
           <Route path="/mahjong" element={<RedirectToMahjong />} />
+          <Route path="/yolo" element={<RedirectToYolo />} />
           <Route path="/pathfinding" element={<PathFindingComponent />} />
-
+          
         </Routes>
       </div>
     </Router>
