@@ -137,3 +137,24 @@
   top: -100px;
   visibility: hidden;
 }
+
+.container {
+  // Base styles first
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  // Then media queries
+  @media (min-width: $xxl) {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  @media (min-width: $xl),
+  (min-width: $md) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
