@@ -1,0 +1,63 @@
+.glowingButton {
+  position: relative;
+  width: calc(56% * 1.3);
+  max-width: calc(210px * 1.3);
+  min-width: calc(140px * 1.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(45, 45, 45, 1);
+  color: #999;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin: 0.5rem;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    &:hover::before {
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    color: var(--clr);
+    text-shadow: 0 0 15px var(--clr), 0 0 40px var(--clr);
+    transform: translateY(-2px);
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(var(--clr), transparent, transparent);
+    transition: 0.5s, top 0s, left 0s;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 0.5;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: rgba(45, 45, 45, 1);
+    border-radius: 0.4rem;
+  }
+} 
