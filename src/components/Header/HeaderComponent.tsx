@@ -34,7 +34,7 @@ export default function HeaderComponent() {
     className={`paddings ${css.wrapper}`}>
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>
-          Group 11
+          Levon
         </div>
 
         <ul 
@@ -57,7 +57,7 @@ export default function HeaderComponent() {
           <li><Link to="/pathfinding">Pathfinding</Link></li>
 
           <li className={`flexCenter ${css.phone}`}>
-            <p>XXXXXXXXXXXX</p>
+            <p>+1 669 388 2709</p>
             <BiPhoneCall size={"40px"}/>
           </li>
 
