@@ -49,6 +49,9 @@ export default function HeaderComponent() {
               <FaGithub size={24} />
             </a> 
           </li>
+          <li><Link to="/pathfinding">YOLO-KAN</Link></li>
+          <li><Link to="/pathfinding">Climb&Conquer</Link></li>
+
           <li><Link to="/recipe-generator">AI ChatBot</Link></li>
 
           <li><Link to="/pathfinding">Pathfinding</Link></li>
