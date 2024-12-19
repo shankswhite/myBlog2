@@ -3,7 +3,7 @@
 // import React from "react";
 // import ReactDOM from "react-dom/client";
 import "../../styles/index.css";
-import { Authenticator } from "@aws-amplify/ui-react";
+// import { Authenticator } from "@aws-amplify/ui-react";
 import { FormEvent, useState } from "react";
 import { Loader, Placeholder } from "@aws-amplify/ui-react";
 import "../../App.css";
@@ -52,49 +52,47 @@ function RecipeGeneratorComponent() {
   };
 
   return (
-  
-  <Authenticator>
-    <div className="app-container">
-      <div className="header-container">
-        <h1 className="main-header">
-          Chat with DIGITAL ME!
-          <br />
-          <span className="highlight">Levon AI Agent</span>
-        </h1>
-        <p className="description">
-          Simply type a few questions about my resume or anything you want.
-        </p>
-      </div>
-      <form onSubmit={onSubmit} className="form-container">
-        <div className="search-container">
-          <input
-            type="text"
-            className="wide-input"
-            id="ingredients"
-            name="ingredients"
-            placeholder="Ingredient1, Ingredient2, Ingredient3,...etc"
-          />
-          <button type="submit" className="search-button">
-            Generate
-          </button>
+    // <Authenticator>
+      <div className="app-container">
+        <div className="header-container">
+          <h1 className="main-header">
+            Chat with DIGITAL ME!
+            <br />
+            <span className="highlight">Levon AI Agent</span>
+          </h1>
+          <p className="description">
+            Simply type a few questions about my resume or anything you want.
+          </p>
         </div>
-      </form>
-      <div className="result-container">
-        {loading ? (
-          <div className="loader-container">
-            <p>Loading...</p>
-            <Loader size="large" />
-            <Placeholder size="large" />
-            <Placeholder size="large" />
-            <Placeholder size="large" />
+        <form onSubmit={onSubmit} className="form-container">
+          <div className="search-container">
+            <input
+              type="text"
+              className="wide-input"
+              id="ingredients"
+              name="ingredients"
+              placeholder="Ingredient1, Ingredient2, Ingredient3,...etc"
+            />
+            <button type="submit" className="search-button">
+              Generate
+            </button>
           </div>
-        ) : (
-          result && <p className="result">{result}</p>
-        )}
+        </form>
+        <div className="result-container">
+          {loading ? (
+            <div className="loader-container">
+              <p>Loading...</p>
+              <Loader size="large" />
+              <Placeholder size="large" />
+              <Placeholder size="large" />
+              <Placeholder size="large" />
+            </div>
+          ) : (
+            result && <p className="result">{result}</p>
+          )}
+        </div>
       </div>
-    </div>
-  </Authenticator>
-    
+    // </Authenticator>
   )
 }
 
