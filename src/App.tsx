@@ -92,7 +92,7 @@ function App() {
               {/* <PortfolioComponent /> */}
             </>
           } />
-          <Route path="/recipe-generator" element={<RecipeGeneratorComponent />} />
+          <Route path="/chatbot" element={<RecipeGeneratorComponent />} />
           <Route path="/ml4t" element={<RedirectToml4t />} />
           <Route path="/qa" element={<RedirectToQA />} />
           <Route path="/os" element={<RedirectToOS />} />

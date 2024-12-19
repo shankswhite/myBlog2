@@ -52,7 +52,7 @@ export default function HeaderComponent() {
           <li><Link to="/pathfinding">YOLO-KAN</Link></li>
           <li><Link to="/pathfinding">Climb&Conquer</Link></li>
 
-          <li><Link to="/recipe-generator">AI ChatBot</Link></li>
+          <li><Link to="/chatbot">AI ChatBot</Link></li>
 
           <li><Link to="/pathfinding">Pathfinding</Link></li>
 
