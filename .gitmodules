@@ -1,0 +1,3 @@
+[submodule "src/components/PathFinding"]
+	path = src/components/PathFinding
+	url = https://github.com/shankswhite/CS5800_PathFinding_GroupProject
