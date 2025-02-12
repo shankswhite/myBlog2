@@ -17,6 +17,17 @@ const Morphing: React.FC = () => {
     <div className={styles.slideshowContainer}>
       <>
         <h1>Beier Neely Morphing</h1>
+
+        <h2>Miku && Tianyi</h2>
+          <div className={styles.imageContainer}>
+            <img 
+              src={`/CG/BeierNeely/miku/output_${currentImage.toString().padStart(2, '0')}.jpg`}
+              alt={`Morphing Frame ${currentImage}`} 
+            />
+          </div>
+          <p className={styles.description}>
+            I just tried two times since I applied 26 Line Pairs for transform the image. The result is ...good except the leg part. There is a little ghosting effect on the left leg. I have tried using different number of line pairs (ex: only 1 line for each leg, or 8 lines for each leg), the results are nearly the same.
+          </p>
         <p className={styles.description}>
           In this project, I understood and implemented the core concepts of the Beier-Neely Morphing algorithm. This algorithm introduces one or more intermediate frame Line Pairs to find the position of each pixel in the target image within the intermediate frame, and then performs color dissolve to achieve the morphing effect.
         </p>
@@ -81,16 +92,7 @@ const Morphing: React.FC = () => {
         I have tried different implementation for warp coordinate calculation, but the result is still not perfect. The rotation direction is opposite to the expected direction.
       </p>
 
-      <h2>Miku && Tianyi</h2>
-      <div className={styles.imageContainer}>
-        <img 
-          src={`/CG/BeierNeely/miku/output_${currentImage.toString().padStart(2, '0')}.jpg`}
-          alt={`Morphing Frame ${currentImage}`} 
-        />
-      </div>
-      <p className={styles.description}>
-        I just tried two times since I applied 26 Line Pairs for transform the image. The result is ...good except the leg part. There is a little ghosting effect on the left leg. I have tried using different number of line pairs (ex: only 1 line for each leg, or 8 lines for each leg), the results are nearly the same.
-      </p>
+
     </div>
   );
 };
